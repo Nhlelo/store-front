@@ -1,0 +1,14 @@
+<div class="col">
+        <select #categoriesList (change)="onSelected()">
+            <option default value="default">Pick a category</option>
+            <option *ngFor="let item of categories">{{item}}</option>	
+        </select>
+   
+    <input class="form-control" type="search" [(ngModel)]="searchinput" (keyup)="onSearchChange()"
+    placeholder="Search for Product" aria-label="Search" />
+</div>
+<div class="product-container" >
+    <div *ngFor="let item of filteredproductList">
+        <app-card [item]="item"></app-card>
+    </div>
+</div>

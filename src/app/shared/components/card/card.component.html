@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-image">
+        <img [src]="item!.image" alt="Denim Jeans" style="width: 20%;">
+    </div>
+   
+    <div class="card-info">
+    <h4 class="p-20">{{item.title}}</h4>
+    <p class="price">R {{item.price}}</p>
+    <p>{{item.category}}</p>
+    </div>
+    <div class="card-footer">
+        <p><button>Add to Cart</button></p>
+        <button  title="View" (click)="gotoDetails(item.id)">
+            View Details
+          </button>
+    </div>
+</div>
