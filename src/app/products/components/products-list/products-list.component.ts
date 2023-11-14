@@ -18,7 +18,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './products-list.component.scss'
 })
 export class ProductsListComponent implements OnInit{
-     productList: Product[] = [new Product()];
+     productList: Product[] = [];
      categories: string[]=[];
      selectedCategory: string | null = null;
      @ViewChild('categoriesList') categoriesList!: ElementRef;

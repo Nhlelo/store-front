@@ -45,7 +45,7 @@ describe('ProductDetailsComponent', () => {
     productService = TestBed.inject(ProductsService);
    activatedRoute = TestBed.inject(ActivatedRoute);
   component.product =productMock;
- 
+   
   });
 
   it('should create the component', () => {
